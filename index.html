@@ -7,17 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
+    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Header / Navbar -->
+    <!-- Navbar -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100 shadow-sm">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#beranda" class="text-xl font-bold text-indigo-600">Nabilah Yusuf</a>
-            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#beranda" class="font-bold text-indigo-600">Nabilah Yusuf</a>
+            <nav class="hidden md:flex gap-6 text-xs font-semibold text-slate-600">
                 <a href="#beranda" class="hover:text-indigo-600">Beranda</a>
                 <a href="#tentang" class="hover:text-indigo-600">Tentang</a>
                 <a href="#cv" class="hover:text-indigo-600">CV</a>
@@ -28,239 +26,166 @@
         </div>
     </header>
 
-    <!-- 1. Beranda -->
-    <section id="beranda" class="py-20 bg-gradient-to-b from-indigo-50 to-white">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-            <div class="space-y-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold uppercase">Siswa Manajemen Perkantoran</span>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-                    Halo, selamat datang! <br>Saya <span class="text-indigo-600">Nabilah Yusuf</span>
+    <div class="max-w-4xl mx-auto px-4 py-10 space-y-16">
+
+        <!-- 1. Beranda -->
+        <section id="beranda" class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+            <div class="space-y-4">
+                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold uppercase tracking-wider">Siswa Manajemen Perkantoran</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+                    Halo, saya <span class="text-indigo-600">Nabilah Yusuf</span>
                 </h1>
-                <p class="text-slate-600 leading-relaxed">
-                    Siswa yang sangat aktif dan antusias di dalam pelajaran Manajemen Perkantoran, Teknologi Perkantoran, serta Bahasa & Public Speaking. Selalu bersemangat untuk mempelajari hal-hal baru, mengasah keterampilan diri, dan berkontribusi aktif dalam berbagai kegiatan organisasi maupun akademis.
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Siswa aktif SMKN 42 Jakarta yang antusias dalam Manajemen Perkantoran, Teknologi Perkantoran, serta Bahasa & Public Speaking. Aktif berorganisasi dan berprestasi di bidang seni serta bela diri.
                 </p>
-                <div class="flex gap-4">
-                    <a href="#prestasi" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700">Lihat Karya Saya</a>
-                    <a href="#kontak" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-medium hover:bg-slate-50">Hubungi Saya</a>
+                <div class="flex gap-3 pt-2">
+                    <a href="#prestasi" class="px-4 py-2.5 rounded-xl bg-indigo-600 text-white text-xs font-semibold shadow hover:bg-indigo-700">Lihat Prestasi</a>
+                    <a href="#kontak" class="px-4 py-2.5 rounded-xl bg-slate-100 text-slate-700 text-xs font-semibold hover:bg-slate-200">Kontak</a>
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl bg-indigo-100 border-4 border-white">
-                    <img src="https://lh3.googleusercontent.com/d/1JMI9-kJjYw_uGCReFwSoE8B4zVrCL7kK=s800" alt="Foto Profil Nabilah Yusuf" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500';">
+                <div class="w-56 h-56 rounded-2xl overflow-hidden shadow-lg border-4 border-indigo-50 bg-indigo-100">
+                    <img src="https://lh3.googleusercontent.com/d/1JMI9-kJjYw_uGCReFwSoE8B4zVrCL7kK=s800" alt="Nabilah Yusuf" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500';">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 2. Tentang Saya -->
-    <section id="tentang" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
-                <h2 class="text-3xl font-bold text-slate-900">Mengenal Lebih Dekat</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Saat ini saya adalah siswa aktif di SMKN 42 Jakarta (Jurusan Manajemen Perkantoran) dan merupakan alumni dari SMP Darul Izzah. Saya percaya bahwa keseimbangan antara pendidikan, kedisiplinan organisasi, seni, dan wawasan adalah kunci utama dalam pengembangan diri.</p>
+        <!-- 2. Tentang & Organisasi -->
+        <section id="tentang" class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                <h2 class="font-bold text-slate-900 text-lg flex items-center gap-2"><i class="fa-solid fa-heart text-indigo-600"></i> Hobi & Minat</h2>
+                <ul class="space-y-2.5 text-xs text-slate-600">
+                    <li>🥋 <strong>Pencak Silat:</strong> Melatih kedisiplinan dan ketahanan mental.</li>
+                    <li>📖 <strong>Baca Puisi & Public Speaking:</strong> Seni olah vokal dan keberanian tampil di publik.</li>
+                    <li>📚 <strong>Membaca:</strong> Memperluas wawasan dan pengetahuan mandiri.</li>
+                    <li>🍳 <strong>Memasak:</strong> Menyalurkan kreativitas resep makanan.</li>
+                </ul>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-4">
-                    <h3 class="text-xl font-semibold text-slate-900"><i class="fa-solid fa-heart text-indigo-600 mr-2"></i> Hobi & Minat</h3>
-                    <ul class="space-y-3 text-slate-600 text-sm">
-                        <li>🥋 <strong>Pencak Silat:</strong> Melatih kedisiplinan, fokus, ketahanan mental, dan fisik.</li>
-                        <li>📖 <strong>Membaca Puisi & Public Speaking:</strong> Wadah mengekspresikan seni, olah vokal, dan keberanian tampil di hadapan publik.</li>
-                        <li>📚 <strong>Membaca (Novel & Non-Fiksi):</strong> Memperluas wawasan, imajinasi, dan menambah pengetahuan baru secara mandiri.</li>
-                        <li>🍳 <strong>Memasak:</strong> Menyalurkan kreativitas dan bereksperimen dengan resep-resep makanan di waktu senggang.</li>
-                    </ul>
-                </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-4">
-                    <h3 class="text-xl font-semibold text-slate-900"><i class="fa-solid fa-users text-indigo-600 mr-2"></i> Pengalaman Organisasi</h3>
-                    <ul class="space-y-3 text-slate-600 text-sm">
-                        <li>🥋 <strong>Ekstrakurikuler Pencak Silat SMKN 42 Jakarta:</strong> Aktif mengikuti latihan, kegiatan pengembangan diri, serta berkontribusi dalam kepengurusan ekstrakurikuler di sekolah.</li>
-                        <li>📝 <strong>Sekretaris – Pencak Silat Perguruan APSN:</strong> Bertanggung jawab dalam mengelola administrasi, penyusunan dokumen, pencatatan kegiatan, serta mendukung kelancaran operasional organisasi.</li>
-                        <li>🧹 <strong>Pengurus OSIS – Bidang Kebersihan & Lingkungan:</strong> Bertanggung jawab dalam menjaga kebersihan, kerapian, serta membangun kedisiplinan dan kesadaran lingkungan di sekolah.</li>
-                    </ul>
-                </div>
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                <h2 class="font-bold text-slate-900 text-lg flex items-center gap-2"><i class="fa-solid fa-users text-indigo-600"></i> Organisasi</h2>
+                <ul class="space-y-2.5 text-xs text-slate-600">
+                    <li>🥋 <strong>Eskul Pencak Silat SMKN 42:</strong> Aktif mengikuti latihan dan pengembangan diri.</li>
+                    <li>📝 <strong>Sekretaris Pencak Silat APSN:</strong> Mengelola administrasi dan dokumen organisasi.</li>
+                    <li>🧹 <strong>Pengurus OSIS Bidang Kebersihan:</strong> Menjaga kerapian dan kedisiplinan lingkungan sekolah.</li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 3. Curriculum Vitae (CV) -->
-    <section id="cv" class="py-20 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
-                <h2 class="text-3xl font-bold text-slate-900">Curriculum Vitae (CV)</h2>
-                <p class="text-slate-600">Riwayat pendidikan serta keahlian profesional yang saya miliki.</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 space-y-6">
-                    <h3 class="text-xl font-semibold text-slate-900"><i class="fa-solid fa-graduation-cap text-indigo-600 mr-2"></i> Riwayat Pendidikan</h3>
-                    <div class="border-l-2 border-indigo-100 pl-4 space-y-4">
-                        <div>
-                            <h4 class="font-semibold text-slate-800">SMKN 42 Jakarta</h4>
-                            <p class="text-sm text-indigo-600">Manajemen Perkantoran (Siswa Aktif)</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-slate-800">SMP Darul Izzah</h4>
-                            <p class="text-sm text-slate-500">Alumni</p>
-                        </div>
-                    </div>
+        <!-- 3. CV & Keterampilan -->
+        <section id="cv" class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-6">
+            <h2 class="font-bold text-slate-900 text-lg text-center">Curriculum Vitae (CV)</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-xs">
+                <div class="space-y-3 border-l-2 border-indigo-200 pl-4">
+                    <h3 class="font-bold text-slate-800">Pendidikan</h3>
+                    <div><strong>SMKN 42 Jakarta</strong> - Manajemen Perkantoran</div>
+                    <div><strong>SMP Darul Izzah</strong> - Alumni</div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 space-y-6">
-                    <h3 class="text-xl font-semibold text-slate-900"><i class="fa-solid fa-lightbulb text-indigo-600 mr-2"></i> Keterampilan (Skills)</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-medium">Manajemen & Administrasi Perkantoran</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-medium">Public Speaking & Seni Pertunjukan</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-medium">Kepemimpinan & Manajemen Organisasi</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-medium">Kedisiplinan & Kerja Sama Tim</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-medium">Olahraga Bela Diri (Pencak Silat)</span>
+                <div class="space-y-3">
+                    <h3 class="font-bold text-slate-800">Keterampilan Utama</h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 font-medium">Administrasi & Pengarsipan</span>
+                        <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 font-medium">Public Speaking & Pidato</span>
+                        <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 font-medium">Kepemimpinan</span>
+                        <span class="px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 font-medium">Pencak Silat</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 4. Hasil Karya & Prestasi -->
-    <section id="prestasi" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
-                <h2 class="text-3xl font-bold text-slate-900">Hasil Karya & Prestasi</h2>
-                <p class="text-slate-600">Pencapaian serta penghargaan utama dalam bidang seni, sastra, dan public speaking.</p>
-            </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 space-y-3">
-                    <div class="text-3xl">🥇</div>
+        <!-- 4. Prestasi Utama -->
+        <section id="prestasi" class="space-y-6">
+            <h2 class="font-bold text-slate-900 text-lg text-center">Hasil Karya & Prestasi Utama</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-2">
+                    <div class="text-xl">🥇</div>
                     <h3 class="font-bold text-slate-900">Juara 1 Baca Puisi (Offline)</h3>
-                    <p class="text-xs text-slate-600">Penghargaan atas kemampuan penghayatan, olah vokal, dan penjiwaan ekspresi seni secara langsung di atas panggung.</p>
+                    <p class="text-slate-500">Penghayatan dan olah vokal di panggung.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 space-y-3">
-                    <div class="text-3xl">🏆</div>
+                <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-2">
+                    <div class="text-xl">🏆</div>
                     <h3 class="font-bold text-slate-900">Juara 1 Baca Puisi (Online)</h3>
-                    <p class="text-xs text-slate-600">Pencapaian dalam menyampaikan estetika sastra dan ekspresi emosional secara optimal melalui media digital.</p>
+                    <p class="text-slate-500">Estetika sastra via media digital.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 space-y-3">
-                    <div class="text-3xl">🎖️</div>
+                <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-2">
+                    <div class="text-xl">🎖️</div>
                     <h3 class="font-bold text-slate-900">Juara Harapan 1 Pidato</h3>
-                    <p class="text-xs text-slate-600">Prestasi dalam bidang public speaking, penyampaian ide gagasan secara terstruktur, dan kemampuan persuasi di depan umum.</p>
+                    <p class="text-slate-500">Kemampuan persuasi dan public speaking.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 space-y-3">
-                    <div class="text-3xl">🏆</div>
-                    <h3 class="font-bold text-slate-900">Juara 1 Fashion Show Antar-RW</h3>
-                    <p class="text-xs text-slate-600">Menunjukkan rasa percaya diri, kreativitas gaya berbusana, dan penampilan publik di lingkungan masyarakat.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Galeri Foto & Video -->
-    <section id="galeri" class="py-20 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
-                <h2 class="text-3xl font-bold text-slate-900">Galeri Foto & Dokumentasi</h2>
-                <p class="text-slate-600">Dokumentasi lengkap kegiatan organisasi, pencak silat, OSIS, serta momen perlombaan.</p>
-            </div>
-            
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Dokumentasi Pencak Silat APSN -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1T5wRrrbfIERKIvH1MY2R4VYNazAObCeA=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Foto Bersama Pencak Silat APSN (1)</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1MHLP3pNP_cO3wdqz21CMiAznMw8KDjXE=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Foto Bersama Pencak Silat APSN (2)</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1xShev3wrznotrr45YnbX3kZWinib9c_a=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Foto Bersama Pencak Silat APSN (3)</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1I1xLyw3gG-Wj32StR_cjv9g0UNSn4Csi=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Sparing Pencak Silat</div>
-                </div>
-
-                <!-- Eskul Silat SMKN 42 -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1CsJnnX73MaXPgFlLUf9uGkbH8isCV0Cl=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Foto Eskul Pencak Silat SMKN 42</div>
-                </div>
-
-                <!-- OSIS -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1B6a_kY1SGoJDKrhJJ0MRvg2X_e3hcAvO=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Dokumentasi OSIS (1)</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1cdRrZSUCjT93bGfN1rbarfhHn09LsSqe=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Dokumentasi OSIS (2)</div>
-                </div>
-
-                <!-- Juara Lomba Baca Puisi -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1XMpbexgpURlJD8Me66oRdEWR_Z2E8fWh=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Juara 1 Lomba Baca Puisi (1)</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1modz2bH25oxAQmEOgRj_BtTaSsftPO3t=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Juara 1 Lomba Baca Puisi (2)</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/15qg70ADY-D38JKEF63h8ic1QvwEQoRsi=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Juara 1 Lomba Baca Puisi Online</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/12sUyH-noqTlRlnD-AE4Y1bnSgP9Nsl2j=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Dokumentasi Saat Membaca Puisi</div>
-                </div>
-
-                <!-- Juara Pidato & Fashion Show -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1-rAfrlOsrzwY8-CIduY4fx0Y4XEP0Xwe=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Juara Harapan 1 Lomba Pidato</div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1R_ALEeV4tMsZ0N5S23DjiWd5oCzffMO-=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Juara 1 Lomba Fashion Show Antar-RW</div>
-                </div>
-
-                <!-- LKBBI 2025 -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm">
-                    <img src="https://lh3.googleusercontent.com/d/1Www7pzsI7ke0mPlUFZkJ0Qt5o9tmjAtH=s800" class="w-full h-56 object-cover" onerror="this.src='https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500';">
-                    <div class="p-4 text-xs font-medium text-center text-slate-700">Ikut Lomba LKBBI 2025</div>
+                <div class="bg-white p-4 rounded-2xl border shadow-sm space-y-2">
+                    <div class="text-xl">🏆</div>
+                    <h3 class="font-bold text-slate-900">Juara 1 Fashion Show</h3>
+                    <p class="text-slate-500">Kreativitas gaya tingkat antar-RW.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 6. Testimoni -->
-    <section id="testimoni" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
-                <h2 class="text-3xl font-bold text-slate-900">Testimoni</h2>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-4">
-                    <p class="italic text-slate-600 text-sm">"Nabilah adalah sosok siswa yang sangat rajin, berdedikasi tinggi, dan bertanggung jawab. Keaktifannya di organisasi serta prestasinya di bidang seni dan public speaking sangat menginspirasi."</p>
-                    <div class="font-semibold text-slate-900 text-xs">— Rekan / Guru</div>
+        <!-- 5. Galeri Foto Lengkap -->
+        <section id="galeri" class="space-y-6">
+            <h2 class="font-bold text-slate-900 text-lg text-center">Galeri Foto & Dokumentasi</h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1T5wRrrbfIERKIvH1MY2R4VYNazAObCeA=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Pencak Silat APSN (1)</span>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-4">
-                    <p class="italic text-slate-600 text-sm">"Nabilah adalah sosok yang inspiratif, cekatan, dan penuh semangat. Sebagai sekretaris sekaligus sesama anggota, ia mampu menyeimbangkan kerja keras saat latihan fisik dengan ketelitian dalam mengurus segala kebutuhan organisasi."</p>
-                    <div class="font-semibold text-slate-900 text-xs">— Pembina / Pelatih Pencak Silat APSN</div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1MHLP3pNP_cO3wdqz21CMiAznMw8KDjXE=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Pencak Silat APSN (2)</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1I1xLyw3gG-Wj32StR_cjv9g0UNSn4Csi=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Sparing Pencak Silat</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1CsJnnX73MaXPgFlLUf9uGkbH8isCV0Cl=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Eskul Silat SMKN 42</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1B6a_kY1SGoJDKrhJJ0MRvg2X_e3hcAvO=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Dokumentasi OSIS</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1XMpbexgpURlJD8Me66oRdEWR_Z2E8fWh=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Juara 1 Baca Puisi</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/15qg70ADY-D38JKEF63h8ic1QvwEQoRsi=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Juara 1 Puisi Online</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1-rAfrlOsrzwY8-CIduY4fx0Y4XEP0Xwe=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Juara Harapan 1 Pidato</span>
+                </div>
+                <div class="bg-white p-2 rounded-2xl border shadow-sm text-center">
+                    <img src="https://lh3.googleusercontent.com/d/1R_ALEeV4tMsZ0N5S23DjiWd5oCzffMO-=s800" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500';">
+                    <span class="text-[11px] font-semibold text-slate-700 mt-2 block">Juara 1 Fashion Show</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="bg-indigo-50 p-6 rounded-2xl border border-indigo-100 text-center space-y-4">
+        <!-- 6. Testimoni -->
+        <section class="grid md:grid-cols-2 gap-4 text-xs">
+            <div class="bg-white p-5 rounded-2xl border shadow-sm italic text-slate-600 space-y-2">
+                "Nabilah adalah sosok siswa yang sangat rajin, berdedikasi tinggi, dan bertanggung jawab di organisasi maupun prestasi seninya."
+                <div class="font-semibold text-slate-900 not-italic">— Rekan / Guru</div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border shadow-sm italic text-slate-600 space-y-2">
+                "Nabilah sangat inspiratif dan cekatan, mampu menyeimbangkan latihan fisik pencak silat dengan ketelitian administrasi."
+                <div class="font-semibold text-slate-900 not-italic">— Pembina Pencak Silat APSN</div>
+            </div>
+        </section>
 
-<h2 class="font-bold text-indigo-900 text-lg">Media Sosial & Kontak</h2>
-
-<div class="flex flex-col gap-2">
-
-<a href="https://instagram.com /biyaxy" target="_blank" class="p-3 bg-white shadow rounded-xl font-semibold text-pink-600 border block">Instagram: @biyaxy</a>
-
-<a href="https://tiktok.com
-
-/@nby_core" target="_blank" class="p-3 bg-white shadow rounded-xl font-semibold text-slate-900 border block">TikTok: @nby_core</a>
-
-<a href="https://wa.me /6287730724691" target="_blank" class="p-3 bg-white shadow rounded-xl font-semibold text-emerald-600 border block">WhatsApp: +62 877-3072-4691</a>
-</div>
-</div> </div>
+        <!-- 7. Media Sosial & Kontak -->
+        <section id="kontak" class="bg-indigo-50 p-6 rounded-3xl border border-indigo-100 text-center space-y-4">
+            <h2 class="font-bold text-indigo-900 text-lg">Media Sosial & Kontak</h2>
+            <div class="flex flex-wrap justify-center gap-3 text-xs">
+                <a href="https://instagram.com/biyaxy" target="_blank" class="px-4 py-2.5 bg-white shadow rounded-xl font-semibold text-pink-600 border">Instagram: @biyaxy</a>
+                <a href="https://tiktok.com/@nby_core" target="_blank" class="px-4 py-2.5 bg-white shadow rounded-xl font-semibold text-slate-900 border">TikTok: @nby_core</a>
+                <a href="https://wa.me/6287730724691" target="_blank" class="px-4 py-2.5 bg-white shadow rounded-xl font-semibold text-emerald-600 border">WhatsApp: +62 877-3072-4691</a>
+            </div>
+        </section>
+    </div>
+    <footer class="text-center py-6 text-xs text-slate-400 border-t border-slate-200 mt-10">
+        &copy; 2026 Nabilah Yusuf. All rights reserved.
+    </footer>
 </body>
 </html>
